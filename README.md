@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Automobile Price Prediction in R
 
 An exploratory regression project examining how vehicle specifications relate
@@ -10,6 +12,20 @@ simple, polynomial, and multiple linear regression models.
 - Does a curved relationship improve the engine-size model?
 - Does combining engine size and horsepower improve predictions?
 - How well do the candidate models perform on unseen observations?
+
+## Visualizations
+
+### Relationships between vehicle specifications and price
+
+The plots below show how vehicle width, curb weight, engine size, and horsepower relate to price.
+
+![Relationships between vehicle specifications and price](outputs/key_predictors.png)
+
+### Linear vs. quadratic engine-size models
+
+This comparison examines whether a curved relationship represents the connection between engine size and price better than a straight line.
+
+![Linear and quadratic engine-size regression models](outputs/engine_size_models.png)
 
 ## Methods
 
@@ -80,4 +96,10 @@ excluded.
 
 ## Author
 
-Josh Guzman
+# Josh Guzman
+
+# automobile-price-analysis
+
+Automobile price prediction in R using exploratory data analysis, regression modeling, and holdout model evaluation.
+
+> > > > > > > 0510087d17e965f040b25839687373b65af5644b

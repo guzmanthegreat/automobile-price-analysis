@@ -1,0 +1,32 @@
+$selected_by_test_rmse
+[1] "engine_and_horsepower"
+
+$model_summary
+
+Call:
+lm(formula = price ~ enginesize + horsepower, data = train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8623.5 -1876.4  -412.3  1792.0 14562.1 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -7240.58     988.58  -7.324 1.21e-11 ***
+enginesize    116.52      12.76   9.132 3.31e-16 ***
+horsepower     52.97      14.03   3.775 0.000227 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3764 on 156 degrees of freedom
+Multiple R-squared:  0.7459,	Adjusted R-squared:  0.7427 
+F-statistic:   229 on 2 and 156 DF,  p-value: < 2.2e-16
+
+
+$evaluation
+                  model      AIC train_r_squared test_RMSE test_MAE test_r_squared
+3 engine_and_horsepower 3074.346       0.7459497  3538.405 2422.204      0.8689876
+4       four_predictors 3048.972       0.7888024  3598.158 2248.690      0.8645255
+1           engine_size 3086.244       0.7227440  3936.103 2816.380      0.8378824
+2 engine_size_quadratic 3088.045       0.7230904  3973.791 2857.850      0.8347630
+

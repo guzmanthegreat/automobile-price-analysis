@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+
+# R session and workspace files
+.Rhistory
+.RData
+.Ruserdata
+
+# Editor and local environment files
+.vscode/
+.idea/

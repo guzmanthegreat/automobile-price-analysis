@@ -1,7 +1,7 @@
 # Data
 
-`analysis.R` downloads the UCI Automobile dataset into this directory the first
-time it runs. The downloaded data file is intentionally excluded from Git so
-the repository retains a clear link to its original source.
+This directory contains the UCI Automobile dataset used by the analysis. The file is included so the project can be run reproducibly without requiring a separate download.
 
-Source: <https://archive.ics.uci.edu/dataset/10/automobile>
+Source: [UCI Automobile Dataset](https://archive.ics.uci.edu/dataset/10/automobile)
+
+The script converts missing values represented by `?` to `NA` and filters to complete observations for price, width, curb weight, engine size, and horsepower.

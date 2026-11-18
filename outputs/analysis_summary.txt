@@ -23,10 +23,22 @@ Multiple R-squared:  0.7459,	Adjusted R-squared:  0.7427
 F-statistic:   229 on 2 and 156 DF,  p-value: < 2.2e-16
 
 
-$evaluation
-                  model      AIC train_r_squared test_RMSE test_MAE test_r_squared
-3 engine_and_horsepower 3074.346       0.7459497  3538.405 2422.204      0.8689876
-4       four_predictors 3048.972       0.7888024  3598.158 2248.690      0.8645255
-1           engine_size 3086.244       0.7227440  3936.103 2816.380      0.8378824
-2 engine_size_quadratic 3088.045       0.7230904  3973.791 2857.850      0.8347630
+$holdout_evaluation
+                  model      AIC train_r_squared test_RMSE test_MAE
+3 engine_and_horsepower 3074.346       0.7459497  3538.405 2422.204
+4       four_predictors 3048.972       0.7888024  3598.158 2248.690
+1           engine_size 3086.244       0.7227440  3936.103 2816.380
+2 engine_size_quadratic 3088.045       0.7230904  3973.791 2857.850
+  test_r_squared
+3      0.8689876
+4      0.8645255
+1      0.8378824
+2      0.8347630
+
+$cross_validation
+                  model  cv_RMSE   cv_MAE cv_R_squared
+4       four_predictors 3490.176 2514.512    0.7877929
+1 engine_and_horsepower 3712.520 2648.078    0.7568491
+2           engine_size 3901.311 2813.963    0.7344599
+3 engine_size_quadratic 4066.789 2876.820    0.7163475
 

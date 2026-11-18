@@ -1,0 +1,22 @@
+Business-facing summary
+========================
+
+Objective: estimate automobile prices from observable vehicle specifications.
+Data: 205 vehicles in the source dataset; 199 complete observations used.
+Recommended model: engine_and_horsepower
+Holdout RMSE: $3,538
+Holdout MAE: $2,422
+Holdout R-squared: 0.869
+Best 5-fold cross-validation model: four_predictors
+5-fold CV RMSE: $3,490
+
+Interpretation:
+Engine size and horsepower provide a useful baseline for estimating vehicle price.
+The holdout split favors the engine-size-plus-horsepower model, while 5-fold
+cross-validation favors the four-predictor model. Both evaluations support
+using multiple vehicle specifications rather than engine size alone.
+A pricing tool should be recalibrated with newer market data before operational use.
+
+Recommended next steps:
+Add vehicle make, body style, fuel economy, and age or mileage when available.
+Validate the model on current listings and monitor errors by vehicle segment.
